@@ -12,9 +12,9 @@ function App() {
             <Navbar />
             <div>
                 <HomeRoute />
-                <ExperienceRoute />
                 <ProjectsRoute />
                 <SkillsRoute />
+                <ExperienceRoute />
                 <ContactRoute />
             </div>
             <Footer/>

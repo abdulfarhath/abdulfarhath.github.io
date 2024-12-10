@@ -1,6 +1,6 @@
 export default function ExperienceRoute() {
     return (
-        <div id="experience" className="h-screen bg-pink-100 flex flex-col items-center justify-center p-10">
+        <div id="experience" className="h-screen bg-[#111111] flex flex-col items-center justify-center p-10">
             <h1 className="text-5xl font-bold mb-4">My Experience</h1>
             <p className="text-lg max-w-3xl text-center">
                 I have worked with various organizations, contributing to impactful projects and gaining hands-on experience in:

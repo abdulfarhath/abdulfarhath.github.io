@@ -18,7 +18,6 @@ export default function Navbar() {
 
     return (
         <div className="navcontainer w-full bg-[#111111] p-8 flex justify-center items-center">
-
             <div
                 className={`bg-[#1d1d1d] text-white py-4 px-8 flex rounded-full justify-center space-x-8 transition-transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'
                     }`}
@@ -27,15 +26,17 @@ export default function Navbar() {
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition"
+                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    activeClass="active"
                 >
-                    Home
+                    /
                 </Link>
                 <Link
                     to="experience"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition"
+                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    activeClass="active"
                 >
                     Experience
                 </Link>
@@ -43,7 +44,8 @@ export default function Navbar() {
                     to="projects"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition"
+                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    activeClass="active"
                 >
                     Projects
                 </Link>
@@ -51,7 +53,8 @@ export default function Navbar() {
                     to="skills"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition"
+                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    activeClass="active"
                 >
                     Skills
                 </Link>
@@ -59,7 +62,8 @@ export default function Navbar() {
                     to="contact"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition"
+                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    activeClass="active"
                 >
                     Contact
                 </Link>
