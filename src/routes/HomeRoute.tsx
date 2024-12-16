@@ -38,7 +38,7 @@ export default function HomeRoute() {
             </a>
 
             <div className="button">
-              <a href="" className='mt-5 px-2 py-2 ml-6 animate-pulse bg-yellow-200 text-black font-bold rounded-lg hover:bg-yellow-300' >
+              <a href="https://drive.google.com/file/d/16fPKguepTfgBesv_s5b2cwDv9FxgGoDf/view?usp=sharing" className='mt-5 px-2 py-2 ml-6 animate-pulse bg-yellow-200 text-black font-bold rounded-lg hover:bg-yellow-300' >
                 Check Resume
               </a>
             </div>
