@@ -26,7 +26,7 @@ export default function Navbar() {
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     /
@@ -35,7 +35,7 @@ export default function Navbar() {
                     to="experience"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Experience
@@ -44,7 +44,7 @@ export default function Navbar() {
                     to="projects"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Projects
@@ -53,7 +53,7 @@ export default function Navbar() {
                     to="skills"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Skills
@@ -62,7 +62,7 @@ export default function Navbar() {
                     to="contact"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-gray-400 transition text-yellow-100"
+                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Contact

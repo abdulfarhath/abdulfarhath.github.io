@@ -27,7 +27,7 @@ export default function HomeRoute() {
             <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer">
               <FaGithub className="text-3xl text-white hover:text-yellow-200" />
             </a>
-            <a href="https://linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/abdulfarhath" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-3xl text-white hover:text-yellow-200" />
             </a>
             <a href="mailto:abdulfarhathmohd@gmail.com">
