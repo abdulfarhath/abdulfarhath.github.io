@@ -19,14 +19,14 @@ export default function Navbar() {
     return (
         <div className="navcontainer w-full bg-[#111111] p-8 flex justify-center items-center">
             <div
-                className={`bg-[#1d1d1d] text-white py-4 px-8 flex rounded-full justify-center space-x-8 transition-transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'
+                className={`bg-[#1d1d1d] text-white py-2 px-8 flex rounded-full justify-center space-x-8 transition-transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'
                     }`}
             >
                 <Link
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-12 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     /
@@ -35,7 +35,7 @@ export default function Navbar() {
                     to="experience"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-24 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Experience
@@ -44,7 +44,7 @@ export default function Navbar() {
                     to="projects"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Projects
@@ -53,7 +53,7 @@ export default function Navbar() {
                     to="skills"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-16 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Skills
@@ -62,7 +62,7 @@ export default function Navbar() {
                     to="contact"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer h-7 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
                     activeClass="active"
                 >
                     Contact
