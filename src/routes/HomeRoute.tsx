@@ -12,15 +12,15 @@ export default function HomeRoute() {
         className="p-20 bg-[#111111] flex flex-row gap-52 items-center justify-center "
       >
         <div className="left">
-          <h1 className="text-8xl font-bold mb-9 text-yellow-200">Farhath</h1>
+          <h1 className="text-8xl font-bold mb-9 text-yellow-200">Abdul Farhath</h1>
           {/* <HyperText
             className="text-8xl font-bold text-yellow-200 dark:text-white"
             text="Farhath"
           /> */}
           <div className="taglines flex flex-col gap-5">
             <h2 className="text-3xl text-green-300">MERN stack Web Developer</h2>
-            <h2 className="text-3xl text-green-300">Flutter App Developer</h2>
-            <h2 className="text-3xl text-green-300">Blockchain Enthusiast</h2>
+            {/* <h2 className="text-3xl text-green-300">Flutter App Developer</h2> */}
+            {/* <h2 className="text-3xl text-green-300">Blockchain Enthusiast</h2> */}
             <h2 className="text-3xl text-green-300">Java + DSA Learner</h2>
           </div>
           <div className="socials flex p-4 pl-0 gap-5 mt-5">
@@ -39,7 +39,7 @@ export default function HomeRoute() {
 
             <div className="button">
               <a href="https://drive.google.com/file/d/16fPKguepTfgBesv_s5b2cwDv9FxgGoDf/view?usp=sharing" className='mt-5 px-2 py-2 ml-6 animate-pulse bg-yellow-200 text-black font-bold rounded-lg hover:bg-yellow-300' >
-                Check Resume
+                Resume
               </a>
             </div>
           </div>
