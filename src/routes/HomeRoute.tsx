@@ -9,10 +9,10 @@ export default function HomeRoute() {
     <>
       <div
         id="home"
-        className="p-20 bg-[#111111] flex flex-row gap-52 items-center justify-center "
+        className=" bg-[#111111] flex flex-row gap-52 items-center justify-center "
       >
         <div className="left">
-          <h1 className="text-8xl font-bold mb-9 text-yellow-200">Abdul Farhath</h1>
+          <h1 className="text-7xl font-bold mb-9 text-yellow-200">Abdul Farhath</h1>
           {/* <HyperText
             className="text-8xl font-bold text-yellow-200 dark:text-white"
             text="Farhath"
@@ -44,13 +44,13 @@ export default function HomeRoute() {
             </div>
           </div>
         </div>
-        <div className="right">
+        <div className="right w-350 h-450">
           <img
             src={farhathImage}
             alt="Farhath's Image"
-            width={350}
-            height={450}
-            className="rounded-3xl"
+            width={300}
+            height={150}
+            className="rounded-3xl animate-bounce-slow"
           />
         </div>
       </div>

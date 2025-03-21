@@ -58,15 +58,6 @@ export default function Navbar() {
                 >
                     Skills
                 </Link>
-                <Link
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
-                    activeClass="active"
-                >
-                    Contact
-                </Link>
             </div>
         </div>
     );
