@@ -1,13 +1,15 @@
 import { FaJs, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaGit } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiFirebase, SiFlutter, SiPython, SiC } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
-import { IconCloud } from '../components/SkillsGlobe';
+// import { IconCloud } from '../components/SkillsGlobe';
+// import { IconCloud } from '@/components/magicui/icon-cloud';
+import { SkillsGlobe } from '@/components/SkillsGlobe';
 
 export default function SkillsRoute() {
     return (
         <>
             <div className="w-full container flex flex-row justify-center">
-                <div className='w-[70%] flex flex-row justify-center gap-50'>
+                <div className='w-[60%] flex flex-row justify-center gap-20'>
                     <div id="skills" className=" bg-[#111111] flex flex-col p-10 gap-9">
                         <h1 className="text-5xl font-bold mb-4 text-yellow-200">My Skills</h1>
 
@@ -93,7 +95,8 @@ export default function SkillsRoute() {
                     </div>
                 </div>
                 <div className="right w-80 mt-10">
-                    <IconCloud iconSlugs={['javascript', 'typescript', 'html5', 'css3', 'react', 'express', 'mongodb', 'firebase', 'java', 'github', 'git', 'flutter', 'python', 'c', 'sql', 'nodejs']}></IconCloud>
+                    {/* <IconCloud iconSlugs={[]}></IconCloud> */}
+                    <SkillsGlobe></SkillsGlobe>
                 </div>
             </div>
         </>

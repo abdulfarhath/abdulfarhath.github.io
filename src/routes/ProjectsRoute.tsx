@@ -11,7 +11,7 @@ export default function ProjectsRoute() {
 
     return (
         <div id='projects' className="container flex flex-col justify-center items-center mt-20">
-            <div className='w-[70%]' >
+            <div className='w-[60%]' >
                 <h1 className="text-yellow-200 text-5xl font-bold mb-4">Projects</h1>
                 <ul>
                     {projects.map((project, index) => (

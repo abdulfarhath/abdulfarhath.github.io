@@ -8,9 +8,10 @@ export default function ExperienceRoute() {
                     I have worked with various organizations, contributing to impactful projects and gaining hands-on experience in:
                 </p>
                 <ul className="text-yellow-200 mt-6 space-y-4 text-lg max-w-2xl list-disc">
-                    <li><strong>Frontend Development:</strong> Creating dynamic and interactive UIs with React.js and Tailwind CSS.</li>
-                    <li><strong>Backend Development:</strong> Developing robust APIs using Node.js and Express.js.</li>
-                    <li><strong>Team Collaboration:</strong> Working with cross-functional teams to deliver quality software solutions.</li>
+                    <li><strong>Frontend Development:</strong> Developed and implemented interfaces for several web pages using React.js and Tailwind CSS.</li>
+                    <li><strong>Design Collaboration:</strong> Collaborated with the design team to ensure seamless integration of UI components.</li>
+                    <li><strong>Backend Integration:</strong> Worked closely with backend developers to connect front-end with APIs.</li>
+                    <li><strong>Version Control:</strong> Used Git for version control and team collaboration.</li>
                 </ul>
             </div>
         </div>
