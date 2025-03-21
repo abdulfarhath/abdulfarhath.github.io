@@ -1,5 +1,5 @@
-import { FaJs, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaGit } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiFirebase, SiFlutter, SiPython, SiC } from 'react-icons/si';
+import { FaJs, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaGit, FaLinux } from 'react-icons/fa';
+import { SiTypescript, SiMongodb, SiFirebase, SiFlutter, SiPython, SiC, SiPostman } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 // import { IconCloud } from '../components/SkillsGlobe';
 // import { IconCloud } from '@/components/magicui/icon-cloud';
@@ -8,8 +8,8 @@ import { SkillsGlobe } from '@/components/SkillsGlobe';
 export default function SkillsRoute() {
     return (
         <>
-            <div className="w-full container flex flex-row justify-center">
-                <div className='w-[60%] flex flex-row justify-center gap-20'>
+            <div className="w-full flex flex-row justify-center items-center gap-40">
+                <div className='left flex flex-row justify-center gap-20'>
                     <div id="skills" className=" bg-[#111111] flex flex-col p-10 gap-9">
                         <h1 className="text-5xl font-bold mb-4 text-yellow-200">My Skills</h1>
 
@@ -90,12 +90,19 @@ export default function SkillsRoute() {
                                     <FaGit className="w-8 h-8 text-orange-500 hover:scale-125 transition-transform duration-200" />
                                     <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Git</span>
                                 </div>
+                                <div className="group relative"></div>
+                                <FaLinux className="w-8 h-8 text-white hover:scale-125 transition-transform duration-200" />
+                                <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Linux</span>
+                            </div>
+                            <div className="group relative">
+                                <SiPostman className="w-8 h-8 text-orange-500 hover:scale-125 transition-transform duration-200" />
+                                <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Postman</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div className="right w-80 mt-10">
-                    {/* <IconCloud iconSlugs={[]}></IconCloud> */}
                     <SkillsGlobe></SkillsGlobe>
                 </div>
             </div>
