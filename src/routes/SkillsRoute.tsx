@@ -11,7 +11,7 @@ export default function SkillsRoute() {
             <div className="w-full flex flex-row justify-center items-center gap-40">
                 <div className='left flex flex-row justify-center gap-20'>
                     <div id="skills" className=" bg-[#111111] flex flex-col p-10 gap-9">
-                        <h1 className="text-5xl font-bold mb-4 text-yellow-200">My Skills</h1>
+                        <h1 className="text-5xl font-bold mb-4 text-yellow-200">SKILLS</h1>
 
                         <div className="web-dev flex flex-row items-start gap-9">
                             <h2 className="text-green-200 text-xl">Web Dev :</h2>
@@ -102,7 +102,7 @@ export default function SkillsRoute() {
                     </div>
                 </div>
 
-                <div className="right w-80 mt-10">
+                <div className="right w-80 mt-24">
                     <SkillsGlobe></SkillsGlobe>
                 </div>
             </div>

@@ -12,16 +12,16 @@ export default function HomeRoute() {
         className=" bg-[#111111] flex flex-row gap-52 items-center justify-center "
       >
         <div className="left">
-          <h1 className="text-7xl font-bold mb-9 text-yellow-200">Abdul Farhath</h1>
+          <h1 className="text-7xl font-bold mb-9 text-yellow-200">ABDUL FARHATH</h1>
           {/* <HyperText
             className="text-8xl font-bold text-yellow-200 dark:text-white"
             text="Farhath"
           /> */}
           <div className="taglines flex flex-col gap-5">
-            <h2 className="text-3xl text-green-300">MERN stack Web Developer</h2>
+            <h2 className="text-3xl text-green-300">MERN STACK WEB DEVELOPER</h2>
             {/* <h2 className="text-3xl text-green-300">Flutter App Developer</h2> */}
             {/* <h2 className="text-3xl text-green-300">Blockchain Enthusiast</h2> */}
-            <h2 className="text-3xl text-green-300">Java + DSA Learner</h2>
+            <h2 className="text-3xl text-green-300">JAVA + DSA ENTHUSIAST</h2>
           </div>
           <div className="socials flex p-4 pl-0 gap-5 mt-5">
             <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer">
