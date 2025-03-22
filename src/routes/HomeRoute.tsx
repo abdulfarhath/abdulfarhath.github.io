@@ -9,7 +9,7 @@ export default function HomeRoute() {
     <>
       <div
         id="home"
-        className=" bg-[#111111] flex flex-row gap-52 items-center justify-center "
+        className=" bg-[#111111] flex flex-row gap-36 items-center justify-center mt-10"
       >
         <div className="left">
           <h1 className="text-7xl font-bold mb-9 text-yellow-200">ABDUL FARHATH</h1>
@@ -21,7 +21,7 @@ export default function HomeRoute() {
             <h2 className="text-3xl text-green-300">MERN STACK WEB DEVELOPER</h2>
             {/* <h2 className="text-3xl text-green-300">Flutter App Developer</h2> */}
             {/* <h2 className="text-3xl text-green-300">Blockchain Enthusiast</h2> */}
-            <h2 className="text-3xl text-green-300">JAVA + DSA ENTHUSIAST</h2>
+            <h2 className="text-3xl text-green-300">JAVA + DSA</h2>
           </div>
           <div className="socials flex p-4 pl-0 gap-5 mt-5">
             <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer">
@@ -48,8 +48,8 @@ export default function HomeRoute() {
           <img
             src={farhathImage}
             alt="Farhath's Image"
-            width={300}
-            height={150}
+            width={225}
+            // height={100}
             className="rounded-3xl animate-bounce-slow"
           />
         </div>
@@ -57,7 +57,7 @@ export default function HomeRoute() {
 
 
       {/* about */}
-      <div className="about flex flex-row items-center justify-center gap-10 p-8 ">
+      <div className="about flex flex-row items-center justify-center gap-10 p-8 mt-8">
 
         {/* image  */}
         <div className="profile flex flex-row gap-5 ">

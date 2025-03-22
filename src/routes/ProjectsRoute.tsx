@@ -21,40 +21,13 @@ export default function ProjectsRoute() {
             details: "Features include play, pause, skip, and real-time display of song metadata such as title, artist, and album art. Designed an intuitive UI with JList for playlist management and JProgressBar for real-time progress tracking, ensuring smooth user interaction and experience." 
         },
         { 
-            name: "E-commerce Platform", 
+            name: "NutriBytes", 
             category: "Full-Stack", 
             techStack: "MERN stack", 
-            description: "A full-stack e-commerce platform using MERN stack.", 
+            description: "A comprehensive nutrition analysis platform that provides detailed nutritional information based on user-inputted food items.", 
             github: "#", 
             video: "#", 
-            details: "This platform allows users to browse products, add them to the cart, and make purchases online." 
-        },
-        { 
-            name: "Weather App", 
-            category: "Flutter", 
-            techStack: "Flutter, Dart", 
-            description: "A weather forecasting app built with Flutter.", 
-            github: "#", 
-            video: "#", 
-            details: "This app provides real-time weather updates and forecasts for various locations." 
-        },
-        { 
-            name: "Library Management System", 
-            category: "Java", 
-            techStack: "Java, MySQL", 
-            description: "A library management system developed in Java.", 
-            github: "#", 
-            video: "#", 
-            details: "This system helps manage library resources, including books, members, and transactions." 
-        },
-        { 
-            name: "Embedded Systems Project", 
-            category: "C", 
-            techStack: "C, Microcontroller", 
-            description: "An embedded systems project using C programming.", 
-            github: "#", 
-            video: "#", 
-            details: "This project involves programming a microcontroller to perform specific tasks." 
+            details: "Utilizes the MERN stack to offer a seamless user experience, allowing users to input food items and receive real-time nutritional data, including calories, macronutrients, and vitamins." 
         },
     ];
 

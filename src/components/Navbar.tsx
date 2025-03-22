@@ -17,16 +17,16 @@ export default function Navbar() {
     }, [lastScrollPosition]);
 
     return (
-        <div className="navcontainer w-full bg-[#111111] p-8 flex justify-center items-center">
+        <div className="navcontainer w-full bg-[#111111] p-4 md:p-8 flex justify-center items-center">
             <div
-                className={`bg-[#1d1d1d] text-white py-2 px-8 flex rounded-full justify-center space-x-8 transition-transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'
+                className={`bg-[#1d1d1d] text-white py-2 px-4 md:px-8 flex flex-col md:flex-row rounded-full justify-center space-y-4 md:space-y-0 md:space-x-8 transition-transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'
                     }`}
             >
                 <Link
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-12 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-12 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
                     activeClass="active"
                 >
                     /
@@ -35,7 +35,7 @@ export default function Navbar() {
                     to="experience"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-24 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-24 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
                     activeClass="active"
                 >
                     Experience
@@ -44,7 +44,7 @@ export default function Navbar() {
                     to="projects"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
                     activeClass="active"
                 >
                     Projects
@@ -53,7 +53,7 @@ export default function Navbar() {
                     to="skills"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-16 rounded-full text-center hover:bg-yellow-400 hover:text-black   transition text-yellow-100"
+                    className="cursor-pointer flex justify-center items-center h-12 w-16 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
                     activeClass="active"
                 >
                     Skills
