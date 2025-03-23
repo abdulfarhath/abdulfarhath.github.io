@@ -2,6 +2,8 @@ import { FaGithub, FaDiscord, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { IoPeople } from 'react-icons/io5';
 import farhathImage from '../assets/farhath.jpeg';
 import buzz from '../assets/buzzz.png';
+import '../styles/styles.css'
+import ResumeButton from '@/components/ResumeButton';
 // import HyperText from "@/components/magicui/hyper-text";
 
 export default function HomeRoute() {
@@ -9,10 +11,10 @@ export default function HomeRoute() {
     <>
       <div
         id="home"
-        className=" bg-[#111111] flex flex-row gap-36 items-center justify-center mt-10"
+        className="mt-36 flex flex-row gap-36 items-center justify-center "
       >
         <div className="left">
-          <h1 className="text-7xl font-bold mb-9 text-yellow-200">ABDUL FARHATH</h1>
+          <h1 className="text-7xl font-bold mb-9 text-cyan-500">ABDUL FARHATH</h1>
           {/* <HyperText
             className="text-8xl font-bold text-yellow-200 dark:text-white"
             text="Farhath"
@@ -36,15 +38,10 @@ export default function HomeRoute() {
             <a href="#footer" className='scroll-smooth'>
               <IoPeople className="text-3xl text-white hover:text-yellow-200" />
             </a>
-
-            <div className="button">
-              <a href="https://drive.google.com/file/d/16fPKguepTfgBesv_s5b2cwDv9FxgGoDf/view?usp=sharing" className='mt-5 px-2 py-2 ml-6 animate-pulse bg-yellow-200 text-black font-bold rounded-lg hover:bg-yellow-300' >
-                Resume
-              </a>
-            </div>
+            <ResumeButton></ResumeButton>
           </div>
         </div>
-        <div className="right w-350 h-450">
+        <div className="right w-350 h-450 flicker-3">
           <img
             src={farhathImage}
             alt="Farhath's Image"
@@ -61,7 +58,7 @@ export default function HomeRoute() {
 
         {/* image  */}
         <div className="profile flex flex-row gap-5 ">
-          <img src={buzz} alt="animated image" width={160} className=' rounded-3xl ' />
+          <img src={buzz} alt="animated image" width={160} className='flicker-3 rounded-3xl ' />
           {/* profile and links  */}
           <div className='flex flex-col items-start mt-5 ' >
             <h2 className='text-white font-bold' >@abdul_farhath</h2>

@@ -8,8 +8,8 @@ export default function SkillsRoute() {
         <>
             <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-40">
                 <div className='left flex flex-col lg:flex-row justify-center gap-10 lg:gap-20'>
-                    <div id="skills" className="bg-[#111111] flex flex-col p-10 gap-9">
-                        <h1 className="text-5xl font-bold mb-4 text-yellow-200">SKILLS</h1>
+                    <div id="skills" className=" flex flex-col p-10 gap-9">
+                        <h1 className="text-5xl font-bold mb-4 text-cyan-500">SKILLS</h1>
 
                         <div className="web-dev flex flex-row items-start gap-9">
                             <h2 className="text-green-200 text-xl">Web Dev :</h2>

@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                     <FaDiscord />
                 </a>
             </div>
-            <p className="text-sm">© 2023 Your Name. All rights reserved.</p>
+            <p className="text-sm">© 2025 made by Farhath.</p>
         </footer>
     );
 

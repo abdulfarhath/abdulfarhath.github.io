@@ -34,7 +34,7 @@ export default function ProjectsRoute() {
     return (
         <div id='projects' className="w-full flex flex-col justify-center items-center mt-20">
             <div className='w-[65%]' >
-                <h1 className="text-yellow-200 text-5xl font-bold mb-10">PROJECTS</h1>
+                <h1 className="text-cyan-500 text-5xl font-bold mb-10">PROJECTS</h1>
                 <ul>
                     {projects.map((project, index) => (
                         <li key={index} className="mb-8">

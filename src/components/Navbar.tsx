@@ -1,64 +1,64 @@
-import { useState, useEffect } from 'react';
+'use client';
+
 import { Link } from 'react-scroll';
+import { useState, useEffect } from 'react';
+import { Dock, DockIcon } from '../components/magicui/dock';
+import { FaHome, FaProjectDiagram, FaTools, FaUserTie } from 'react-icons/fa';
 
 export default function Navbar() {
-    const [showNavbar, setShowNavbar] = useState(true);
-    const [lastScrollPosition, setLastScrollPosition] = useState(0);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollPosition, setLastScrollPosition] = useState(0);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollPosition = window.scrollY;
-            setShowNavbar(currentScrollPosition < lastScrollPosition || currentScrollPosition < 100);
-            setLastScrollPosition(currentScrollPosition);
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+      setShowNavbar(
+        currentScrollPosition < lastScrollPosition || currentScrollPosition < 100
+      );
+      setLastScrollPosition(currentScrollPosition);
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollPosition]);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollPosition]);
 
-    return (
-        <div className="navcontainer w-full bg-[#111111] p-4 md:p-8 flex justify-center items-center">
-            <div
-                className={`bg-[#1d1d1d] text-white py-2 px-4 md:px-8 flex flex-col md:flex-row rounded-full justify-center space-y-4 md:space-y-0 md:space-x-8 transition-transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'
-                    }`}
+  const sections = [
+    { id: 'home', label: '/', icon: <FaHome size={24} /> },
+    { id: 'experience', label: 'Experience', icon: <FaUserTie size={24} /> },
+    { id: 'projects', label: 'Projects', icon: <FaProjectDiagram size={24} /> },
+    { id: 'skills', label: 'Skills', icon: <FaTools size={24} /> },
+  ];
+
+  return (
+    <div
+      className={`fixed top-0 left-0 w-full py-2 flex justify-center items-center transition-transform duration-500 z-50 ${
+        showNavbar ? 'translate-y-0' : '-translate-y-full'
+      }`}
+    >
+      <Dock
+        iconSize={50}
+        iconMagnification={80}
+        iconDistance={160}
+        direction="middle"
+        className="gap-8 p-4"
+      >
+        {sections.map((section, index) => (
+          <DockIcon key={index}>
+            <Link
+              to={section.id}
+              smooth={true}
+              duration={500}
+              spy={true}
+              offset={-70}
+              className="flex flex-col justify-center items-center text-yellow-100 hover:text-yellow-400 transition-colors"
+              activeClass="text-yellow-400"
             >
-                <Link
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-12 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
-                    activeClass="active"
-                >
-                    /
-                </Link>
-                <Link
-                    to="experience"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-24 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
-                    activeClass="active"
-                >
-                    Experience
-                </Link>
-                <Link
-                    to="projects"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-20 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
-                    activeClass="active"
-                >
-                    Projects
-                </Link>
-                <Link
-                    to="skills"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer flex justify-center items-center h-12 w-16 rounded-full text-center hover:bg-yellow-400 hover:text-black transition text-yellow-100 text-sm md:text-base"
-                    activeClass="active"
-                >
-                    Skills
-                </Link>
-            </div>
-        </div>
-    );
+              {/* {section.icon} */}
+              <span className="text-sm">{section.label}</span>
+            </Link>
+          </DockIcon>
+        ))}
+      </Dock>
+    </div>
+  );
 }
