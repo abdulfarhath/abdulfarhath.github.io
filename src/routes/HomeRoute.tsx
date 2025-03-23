@@ -20,10 +20,10 @@ export default function HomeRoute() {
             text="Farhath"
           /> */}
           <div className="taglines flex flex-col gap-5">
-            <h2 className="text-3xl text-green-300">MERN STACK WEB DEVELOPER</h2>
+            <h2 className="text-3xl text-gray-300 ">MERN STACK WEB DEVELOPER</h2>
             {/* <h2 className="text-3xl text-green-300">Flutter App Developer</h2> */}
             {/* <h2 className="text-3xl text-green-300">Blockchain Enthusiast</h2> */}
-            <h2 className="text-3xl text-green-300">JAVA + DSA</h2>
+            <h2 className="text-3xl text-gray-300">JAVA + DSA</h2>
           </div>
           <div className="socials flex p-4 pl-0 gap-5 mt-5">
             <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer">
@@ -75,8 +75,8 @@ export default function HomeRoute() {
 
         {/* about me text ? */}
         <div className="about-txt w-[45%]">
-          <h1 className="text-2xl text-yellow-200">About Me</h1>
-          <p className="text-xl text-green-300">
+          <h1 className="text-2xl text-[#f41ccc]">About Me</h1>
+          <p className="text-xl text-gray-300">
             I am a MERN stack web developer, Flutter app developer, Blockchain enthusiast, and Java
             + DSA learner. I love to build things that make a difference. I am a passionate learner
             and a team player. I love to work on projects that challenge me and help me grow.
