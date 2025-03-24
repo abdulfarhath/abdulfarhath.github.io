@@ -14,7 +14,8 @@ export default function HomeRoute() {
         className="mt-36 flex flex-row gap-36 items-center justify-center "
       >
         <div className="left">
-          <h1 className="text-7xl font-bold mb-9 text-cyan-500">ABDUL FARHATH</h1>
+          <h1 className="text-7xl font-bold mb-2 mt-9 text-cyan-500">ABDUL FARHATH</h1>
+          <h1 className="text-7xl font-bold mb-5 mt-0 text-cyan-500">MOHAMMAD</h1>
           {/* <HyperText
             className="text-8xl font-bold text-yellow-200 dark:text-white"
             text="Farhath"

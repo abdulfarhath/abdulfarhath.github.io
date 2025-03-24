@@ -39,8 +39,8 @@ export default function ProjectsRoute() {
                     {projects.map((project, index) => (
                         <li key={index} className="mb-8">
                             <h2 className="text-[#df5bc7] text-3xl mb-3">{project.name}</h2>
-                            <p className="text-gray-200"><strong className='text-purple-600'>Category:  </strong> {project.category}</p>
-                            <p className="text-gray-200 mb-3"><strong className='text-green-500' >Tech Stack:  </strong> {project.techStack}</p>
+                            <p className="text-gray-200"><strong className='text-purple-200'>Category:  </strong> {project.category}</p>
+                            <p className="text-gray-200 mb-3"><strong className='text-purple-200' >Tech Stack:  </strong> {project.techStack}</p>
                             <p className="text-gray-300">{project.description}</p>
                             <p className="text-gray-300">{project.details}</p>
                             <div className="text-cyan-300 mt-3">
