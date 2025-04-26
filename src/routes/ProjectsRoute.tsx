@@ -32,21 +32,23 @@ export default function ProjectsRoute() {
     ];
 
     return (
-        <div id='projects' className="w-full flex flex-col justify-center items-center mt-20">
-            <div className='w-[65%]' >
-                <h1 className="text-cyan-500 text-5xl font-bold mb-10">PROJECTS</h1>
+        <div id='projects' className="w-full flex flex-col justify-center items-center mt-20 px-4 md:px-6 lg:px-0">
+            <div className='w-full md:w-[80%] lg:w-[65%]' >
+                <h1 className="text-cyan-500 text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-10">PROJECTS</h1>
                 <ul>
                     {projects.map((project, index) => (
-                        <li key={index} className="mb-8">
-                            <h2 className="text-[#df5bc7] text-3xl mb-3">{project.name}</h2>
-                            <p className="text-gray-200"><strong className='text-purple-200'>Category:  </strong> {project.category}</p>
-                            <p className="text-gray-200 mb-3"><strong className='text-purple-200' >Tech Stack:  </strong> {project.techStack}</p>
-                            <p className="text-gray-300">{project.description}</p>
-                            <p className="text-gray-300">{project.details}</p>
-                            <div className="text-cyan-300 mt-3">
-                                <a href={project.github}>GitHub Link</a> | <a href={project.video}>Video Link</a>
+                        <li key={index} className="mb-8 p-4 bg-gray-900 bg-opacity-40 rounded-lg hover:bg-opacity-60 transition-all">
+                            <h2 className="text-[#df5bc7] text-2xl md:text-3xl mb-2 md:mb-3">{project.name}</h2>
+                            <div className="flex flex-col md:flex-row md:gap-4 mb-2">
+                                <p className="text-gray-200"><strong className='text-purple-200'>Category:</strong> {project.category}</p>
+                                <p className="text-gray-200"><strong className='text-purple-200'>Tech Stack:</strong> {project.techStack}</p>
                             </div>
-                                
+                            <p className="text-gray-300 mb-2">{project.description}</p>
+                            <p className="text-gray-300">{project.details}</p>
+                            <div className="text-cyan-300 mt-3 flex flex-wrap gap-4">
+                                <a href={project.github} className="hover:text-cyan-400 transition-colors">GitHub Link</a>
+                                <a href={project.video} className="hover:text-cyan-400 transition-colors">Video Link</a>
+                            </div>
                         </li>
                     ))}
                 </ul>

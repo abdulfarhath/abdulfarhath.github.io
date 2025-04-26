@@ -1,91 +1,144 @@
-import { FaGithub, FaDiscord, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaDiscord, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 import { IoPeople } from 'react-icons/io5';
 import farhathImage from '../assets/farhath.jpeg';
 import buzz from '../assets/buzzz.png';
 import '../styles/styles.css'
-import ResumeButton from '@/components/ResumeButton';
-// import HyperText from "@/components/magicui/hyper-text";
 
 export default function HomeRoute() {
   return (
     <>
       <div
         id="home"
-        className="mt-36 flex flex-row gap-36 items-center justify-center "
+        className="mt-36 md:mt-28 lg:mt-36 flex flex-col items-center justify-center px-4 md:px-8"
       >
-        <div className="left">
-          <h1 className="text-7xl font-bold mb-2 mt-9 text-cyan-500">ABDUL FARHATH</h1>
-          <h1 className="text-7xl font-bold mb-5 mt-0 text-cyan-500">MOHAMMAD</h1>
-          {/* <HyperText
-            className="text-8xl font-bold text-yellow-200 dark:text-white"
-            text="Farhath"
-          /> */}
-          <div className="taglines flex flex-col gap-5">
-            <h2 className="text-3xl text-gray-300 ">MERN STACK WEB DEVELOPER</h2>
-            {/* <h2 className="text-3xl text-green-300">Flutter App Developer</h2> */}
-            {/* <h2 className="text-3xl text-green-300">Blockchain Enthusiast</h2> */}
-            <h2 className="text-3xl text-gray-300">JAVA + DSA</h2>
+        {/* Main content area */}
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-16 items-center justify-center w-full">
+          {/* Left content area - visible on large screens only */}
+          <div className="left text-center lg:text-left hidden lg:block">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-cyan-500">ABDUL FARHATH</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-cyan-500">MOHAMMAD</h1>
+            
+            <div className="taglines flex flex-col gap-2 lg:gap-3">
+              <h2 className="text-xl md:text-2xl text-gray-300">MERN STACK WEB DEVELOPER</h2>
+              <h2 className="text-xl md:text-2xl text-gray-300">JAVA + DSA</h2>
+            </div>
+            
+            {/* Social links for large screens */}
+            <div className="socials flex flex-wrap justify-center lg:justify-start gap-4 mt-5">
+              <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer" 
+                className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <FaGithub className="text-xl text-white" />
+              </a>
+              <a href="https://linkedin.com/in/abdulfarhath" target="_blank" rel="noopener noreferrer"
+                className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <FaLinkedin className="text-xl text-white" />
+              </a>
+              <a href="mailto:abdulfarhathmohd@gmail.com"
+                className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <FaEnvelope className="text-xl text-white" />
+              </a>
+              <a href="#footer" className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <IoPeople className="text-xl text-white" />
+              </a>
+              <a 
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-md transition-colors duration-300"
+              >
+                <FaFileAlt /> Resume
+              </a>
+            </div>
           </div>
-          <div className="socials flex p-4 pl-0 gap-5 mt-5">
-            <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="text-3xl text-white hover:text-yellow-200" />
-            </a>
-            <a href="https://linkedin.com/in/abdulfarhath" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-3xl text-white hover:text-yellow-200" />
-            </a>
-            <a href="mailto:abdulfarhathmohd@gmail.com">
-              <FaEnvelope className="text-3xl text-white hover:text-yellow-200" />
-            </a>
-            <a href="#footer" className='scroll-smooth'>
-              <IoPeople className="text-3xl text-white hover:text-yellow-200" />
-            </a>
-            <ResumeButton></ResumeButton>
+          
+          {/* Left content area - visible on small/medium screens only */}
+          <div className="left text-center lg:hidden">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-cyan-500">ABDUL FARHATH</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-cyan-500">MOHAMMAD</h1>
+            
+            <div className="taglines flex flex-col gap-2">
+              <h2 className="text-xl md:text-2xl text-gray-300">MERN STACK WEB DEVELOPER</h2>
+              <h2 className="text-xl md:text-2xl text-gray-300">JAVA + DSA</h2>
+            </div>
+          </div>
+
+          {/* Image area */}
+          <div className="right flex justify-center">
+            <div className="relative">
+              <img
+                src={farhathImage}
+                alt="Farhath's Image"
+                className="rounded-xl border-5 border-cyan-500/20 shadow-lg shadow-cyan-500/20 w-48 md:w-56 lg:w-64 z-10 relative"
+              />
+            </div>
           </div>
         </div>
-        <div className="right w-350 h-450 flicker-3">
-          <img
-            src={farhathImage}
-            alt="Farhath's Image"
-            width={225}
-            // height={100}
-            className="rounded-3xl animate-bounce-slow"
-          />
+
+        {/* Social links for small/medium screens - will appear below image */}
+        <div className="socials flex flex-wrap justify-center gap-6 mt-8 lg:hidden">
+          <a href="https://github.com/abdulfarhath" target="_blank" rel="noopener noreferrer" 
+            className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+            <FaGithub className="text-xl text-white" />
+          </a>
+          <a href="https://linkedin.com/in/abdulfarhath" target="_blank" rel="noopener noreferrer"
+            className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+            <FaLinkedin className="text-xl text-white" />
+          </a>
+          <a href="mailto:abdulfarhathmohd@gmail.com"
+            className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+            <FaEnvelope className="text-xl text-white" />
+          </a>
+          <a href="#footer" className="bg-gray-800 p-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+            <IoPeople className="text-xl text-white" />
+          </a>
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-md transition-colors duration-300"
+          >
+            <FaFileAlt /> Resume
+          </a>
         </div>
       </div>
 
-
       {/* about */}
-      <div className="about flex flex-row items-center justify-center gap-10 p-8 mt-8">
-
-        {/* image  */}
-        <div className="profile flex flex-row gap-5 ">
-          <img src={buzz} alt="animated image" width={160} className='flicker-3 rounded-3xl ' />
-          {/* profile and links  */}
-          <div className='flex flex-col items-start mt-5 ' >
-            <h2 className='text-white font-bold' >@abdul_farhath</h2>
-            <div className="profiles flex flex-row gap-5">
-              <a href="https://www.hackerrank.com/abdulfarhathmohd" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn.worldvectorlogo.com/logos/hackerrank.svg" alt="HackerRank" width={40} height={40} className="hover:opacity-75" />
+      <div className="about flex flex-col md:flex-row items-center justify-center gap-8 p-4 md:p-8 mt-16 bg-gray-900 bg-opacity-40 rounded-lg border border-gray-800 max-w-4xl mx-auto">
+        {/* profile and links */}
+        <div className="flex flex-col md:flex-row gap-6 items-center">
+          <div className="p-1 bg-gradient-to-br from-cyan-500/30 to-purple-500/30 rounded-xl">
+            <img 
+              src={buzz} 
+              alt="animated character" 
+              className="w-36 md:w-40 rounded-lg" 
+            />
+          </div>
+          
+          <div className='flex flex-col items-center md:items-start'>
+            <h2 className='text-white font-bold text-xl mb-3'>@abdul_farhath</h2>
+            <div className="profiles flex gap-4">
+              <a href="https://www.hackerrank.com/abdulfarhathmohd" target="_blank" rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <img src="https://cdn.worldvectorlogo.com/logos/hackerrank.svg" alt="HackerRank" className="w-6" />
               </a>
-              <a href="https://leetcode.com/abdulfarhath" target="_blank" rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" width={40} height={40} className="hover:opacity-75" />
+              <a href="https://leetcode.com/abdulfarhath" target="_blank" rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" className="w-6" />
               </a>
             </div>
           </div>
         </div>
 
-        {/* about me text ? */}
-        <div className="about-txt w-[45%]">
-          <h1 className="text-2xl text-[#f41ccc]">About Me</h1>
-          <p className="text-xl text-gray-300">
+        {/* about me text */}
+        <div className="about-txt md:w-2/3 mt-6 md:mt-0 text-center md:text-left">
+          <h1 className="text-xl md:text-2xl text-cyan-400 mb-3 pb-2 border-b border-gray-700">About Me</h1>
+          <p className="text-base md:text-lg text-gray-300">
             I am a MERN stack web developer, Flutter app developer, Blockchain enthusiast, and Java
             + DSA learner. I love to build things that make a difference. I am a passionate learner
             and a team player. I love to work on projects that challenge me and help me grow.
           </p>
         </div>
       </div>
-
-
     </>
   );
 }
