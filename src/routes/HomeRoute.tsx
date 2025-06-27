@@ -41,7 +41,7 @@ export default function HomeRoute() {
                 <IoPeople className="text-xl text-white" />
               </a>
               <a 
-                href="https://drive.google.com/file/d/1aTgC859RKq0-iBAVKjxHIE-KqoGGJS2R/" 
+                href="https://drive.google.com/file/d/1MQxqNAO64Wz0_PMRWN2uytlku5Z4j5cy/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-md transition-colors duration-300"
