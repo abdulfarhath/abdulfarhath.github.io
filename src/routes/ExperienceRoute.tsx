@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function ExperienceRoute() {
     const experiences = [
         {
@@ -7,36 +5,42 @@ export default function ExperienceRoute() {
             role: "Frontend Developer",
             techStack: "React, Next.js, Figma",
             description: "Developed and implemented interfaces for several web pages using React.js and Tailwind CSS.",
-            details: "Collaborated with design team on UI components and worked with backend developers for API integration. Used Git for version control and team collaboration."
+            details: "Collaborated with design team on UI components and worked with backend developers for API integration. Used Git for version control and team collaboration.",
+            highlights: [
+                { title: "Frontend Development", text: "Developed and implemented interfaces for several web pages using React.js and Tailwind CSS." },
+                { title: "Design Collaboration", text: "Collaborated with the design team to ensure seamless integration of UI components using Figma." },
+                { title: "Backend Integration", text: "Worked closely with backend developers to connect front-end with APIs." },
+                { title: "Version Control", text: "Used Git for version control and team collaboration." }
+            ]
         }
-        // You can add more experiences here following the same structure
     ];
 
     return (
-        <div className="container flex flex-col justify-center items-center w-full">
-            <div id="experience" className="w-full md:w-[80%] lg:w-[65%] flex flex-col mt-20 px-4 md:px-6 lg:px-0">
-                <h1 className="text-cyan-500 text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-10">EXPERIENCE</h1>
-                
-                {experiences.map((experience, index) => (
-                    <div key={index} className="mb-8 p-4 bg-gray-900 bg-opacity-40 rounded-lg hover:bg-opacity-60 transition-all">
-                        <h2 className="text-[#df5bc7] text-2xl md:text-3xl mb-2 md:mb-3">{experience.company}</h2>
-                        <div className="flex flex-col md:flex-row md:gap-4 mb-2">
-                            <p className="text-gray-200"><strong className='text-purple-200'>Role:</strong> {experience.role}</p>
-                            <p className="text-gray-200"><strong className='text-purple-200'>Tech Stack:</strong> {experience.techStack}</p>
-                        </div>
-                        <p className="text-gray-300 mb-2">{experience.description}</p>
-                        <p className="text-gray-300">{experience.details}</p>
+        <section id="experience" className="section-spacing">
+            <div className="section-container">
+                <h1 className="section-title">EXPERIENCE</h1>
 
-                        {/* If you want to keep the bullet points from your original design */}
-                        <ul className="text-gray-300 mt-4 space-y-2 list-disc pl-5">
-                            <li><strong>Frontend Development:</strong> Developed and implemented interfaces for several web pages using React.js and Tailwind CSS.</li>
-                            <li><strong>Design Collaboration:</strong> Collaborated with the design team to ensure seamless integration of UI components using Figma.</li>
-                            <li><strong>Backend Integration:</strong> Worked closely with backend developers to connect front-end with APIs.</li>
-                            <li><strong>Version Control:</strong> Used Git for version control and team collaboration.</li>
+                {experiences.map((experience, index) => (
+                    <div key={index} className="card">
+                        <h2 className="text-[#df5bc7] text-xl md:text-2xl font-semibold mb-3">{experience.company}</h2>
+                        <div className="flex flex-col md:flex-row md:gap-6 mb-3 text-sm md:text-base">
+                            <p className="text-gray-200"><strong className='text-cyan-400'>Role:</strong> {experience.role}</p>
+                            <p className="text-gray-200"><strong className='text-cyan-400'>Tech Stack:</strong> {experience.techStack}</p>
+                        </div>
+                        <p className="text-gray-300 mb-2 leading-relaxed">{experience.description}</p>
+                        <p className="text-gray-400 text-sm mb-4">{experience.details}</p>
+
+                        <ul className="text-gray-300 space-y-2 text-sm">
+                            {experience.highlights.map((highlight, i) => (
+                                <li key={i} className="flex items-start gap-2">
+                                    <span className="text-cyan-500 mt-1">•</span>
+                                    <span><strong className="text-gray-200">{highlight.title}:</strong> {highlight.text}</span>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

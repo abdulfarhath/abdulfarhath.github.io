@@ -44,17 +44,17 @@ export default function SkillsRoute() {
     ];
 
     return (
-        <div className="w-full flex flex-col justify-center items-center mt-20 px-4 md:px-6 lg:px-0">
-            <div id="skills" className="w-full md:w-[80%] lg:w-[65%]">
-                <h1 className="text-cyan-500 text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-10">SKILLS</h1>
-                
+        <section id="skills" className="section-spacing">
+            <div className="section-container">
+                <h1 className="section-title">SKILLS</h1>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {skillCategories.map((category, index) => (
-                        <div key={index} className="p-5 bg-gray-900 bg-opacity-40 rounded-lg border border-gray-800 transition-all duration-300">
-                            <h2 className="text-cyan-400 text-xl md:text-2xl mb-4 pb-2 border-b border-gray-700">{category.title}</h2>
-                            <div className="flex flex-wrap gap-4">
+                        <div key={index} className="card">
+                            <h2 className="text-cyan-400 text-lg md:text-xl font-semibold mb-4 pb-2 border-b border-gray-700/50">{category.title}</h2>
+                            <div className="flex flex-wrap gap-3">
                                 {category.skills.map((skill, i) => (
-                                    <div key={i} className="flex items-center gap-2 bg-gray-800 bg-opacity-50 px-3 py-2 rounded-md">
+                                    <div key={i} className="flex items-center gap-2 bg-gray-800/70 px-3 py-2 rounded-lg hover:bg-gray-700/70 transition-colors">
                                         {React.cloneElement(skill.icon, { className: `w-5 h-5 ${skill.icon.props.className}` })}
                                         <span className="text-sm text-gray-200">{skill.name}</span>
                                     </div>
@@ -64,6 +64,6 @@ export default function SkillsRoute() {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
